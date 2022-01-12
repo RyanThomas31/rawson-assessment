@@ -1,0 +1,87 @@
+{
+    "Seller":[{
+    "Name":"Jeffrey Osbourne",
+    "Address":"489 Mark Street, Pietersburg",
+    "Updated":"Updated 5 hours ago",
+    "Created":"2 Dec 2019",
+    "Progress":"99%",
+    "Completed":"4 Dec 2019"
+    },
+    {"Name":"Ryan Giggs",
+    "Address":"765 Plane Street, Ndabakazi",
+    "Updated":"Updated a day ago",
+    "Created":"25 Dec 2019",
+    "Progress":"90%",
+    "Completed":"26 Dec 2019"
+    },
+    {"Name":"Tina Turner",
+    "Address":"694 Bath Rd, Inanda",
+    "Updated":"Updated 10 hours ago",
+    "Created":"2 Dec 2019",
+    "Progress":"50%",
+    "Completed":"3 Dec 2019"
+    },
+    {"Name":"Whitney Houston",
+    "Address":"1128 Stanza Bopape Street, Giyani",
+    "Updated":"Updated 6 minutes ago",
+    "Created":"1 Dec 2019",
+    "Progress":"30%",
+    "Completed":"14 Dec 2019"
+    },
+    {"Name":"Aretha Franklin",
+    "Address":"57 Barlow Street, Mokopane",
+    "Updated":"Updated just now",
+    "Created":"21 Dec 2019",
+    "Progress":"20%",
+    "Completed":"24 Dec 2019"
+    },
+    {"Name":"Anita Baker",
+    "Address":"597 Sandown Rd, Cape Town",
+    "Updated":"Updated 5 hours ago",
+    "Created":"12 Dec 2019",
+    "Progress":"60%",
+    "Completed":"14 Dec 2019"
+    },
+    {"Name":"Nina Simone",
+    "Address":"186 Stanza Bopape Street, Malamulele",
+    "Updated":"Updated 8 hours ago",
+    "Created":"22 Dec 2019",
+    "Progress":"15%",
+    "Completed":"24 Dec 2019"
+    },
+    {"Name":"Marshall Mathers",
+    "Address":"2443 Dikbas Road, Northern Province",
+    "Updated":"Updated 6 hours ago",
+    "Created":"2 Dec 2019",
+    "Progress":"5%",
+    "Completed":"6 Dec 2019"
+    },
+    {"Name":"Michael Jackson",
+    "Address":"875 Tait Street, Marikana",
+    "Updated":"Updated 10 hours ago",
+    "Created":"20 Dec 2019",
+    "Progress":"1%",
+    "Completed":"24 Dec 2019"
+    },
+    {"Name":"Louis Armstrong",
+    "Address":"2041 Roger St, Bizana",
+    "Updated":"Updated 11 hours ago",
+    "Created":"22 Dec 2019",
+    "Progress":"80%",
+    "Completed":"24 Dec 2019"
+    },
+    {"Name":"Elvis Presley",
+    "Address":"1065 Dickens St, Kempton Park",
+    "Updated":"Updated 22 hours ago",
+    "Created":"23 Dec 2019",
+    "Progress":"70%",
+    "Completed":"26 Dec 2019"
+    },
+    {"Name":"Charmaine Meintjies",
+    "Address":"1551 Zigzag Rd, Sasolburg",
+    "Updated":"Updated 13 hours ago",
+    "Created":"2 Dec 2019",
+    "Progress":"50%",
+    "Completed":"9 Dec 2019"
+    }]
+}
