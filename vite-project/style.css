@@ -1,0 +1,149 @@
+*{
+  border: #000 solid;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(196, 32, 32);
+}
+
+html {
+  width: auto;
+  height: auto;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+body {
+  width: auto;
+  height: auto;
+}
+
+#container {
+  width: auto;
+  height: 100%;
+}
+
+.header {
+  font-size: 25px;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  /* border: #000 solid; */
+  background-color: rgba(0, 0, 0, 0.905);
+}
+
+.left-side {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-image: url("/sources/images/28-collection-of-red-classic-car-clipart-vintage-car-front-view-11562849202pqkydlmaoo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 160px;
+  margin-right: 15px;
+}
+
+.left-side a {
+  height: 60px;
+  width: 200px;
+  text-align: center;
+  line-height: 60px;
+  right: 0;
+  position: absolute;
+  text-decoration: none;
+}
+
+.left-side a:hover {
+  color: #fff;
+}
+
+.right-side {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.right-side .info {
+  height: 100%;
+  width: 300px;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+}
+
+.right-side .info a {
+  margin-right: 15px;
+}
+
+.right-side .info button {
+  border: hidden;
+  border-radius: 7px;
+  height: 38px;
+  width: 70px;
+  color: rgba(0, 0, 0, 0.905);
+}
+
+.right-side .info button:hover {
+  border-color: rgb(196, 32, 32);
+  box-shadow: 0px 0px 10px 5px rgb(196 32 32);
+  outline: none;
+  color: rgb(196 32 32);
+}
+
+.main-content {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main-content .button-space {
+  height: 250px;
+  position: relative;
+}
+
+.main-content .button-space button {
+  height: 70px;
+  width: 200px;
+  font-size: 20px;
+  right: 30px;
+  bottom: 30px;
+  position: absolute;
+  border: hidden;
+  color: #fff;
+  background-color: rgb(196, 32, 32);
+  border-radius: 7px;
+}
+
+.main-content .button-space button:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.905);
+  color: rgba(0, 0, 0, 0.905);
+}
+
+.main-content .progress-report {
+  height: 140px;
+}
+
+.main-content .valuation-details {
+  height: 400px;
+}
