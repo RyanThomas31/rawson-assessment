@@ -1,5 +1,5 @@
 *{
-  border: #000 solid;
+  /* border: #000 solid; */
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(196, 32, 32);
 }
@@ -52,11 +52,11 @@ body {
 .logo {
   width: 60px;
   height: 60px;
-  background-image: url("/sources/images/28-collection-of-red-classic-car-clipart-vintage-car-front-view-11562849202pqkydlmaoo.png");
+  background-image: url("/sources/images/site-logo.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  right: 160px;
+  right: 180px;
   margin-right: 15px;
 }
 
@@ -65,7 +65,7 @@ body {
   width: 200px;
   text-align: center;
   line-height: 60px;
-  right: 0;
+  right: 25px;
   position: absolute;
   text-decoration: none;
 }
@@ -86,7 +86,7 @@ body {
 .right-side .info {
   height: 100%;
   width: 300px;
-  right: 0;
+  right: 30px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -144,10 +144,22 @@ body {
 .main-content .progress-report {
   height: 140px;
   background-color: rgba(0, 0, 0, 0.905);
+  position: relative;
+}
+
+.main-content .progress-report h2 {
+  position: absolute;
+  bottom: 0;
+  font-size: 80px;
+  margin: 25px;
+}
+
+.main-content .progress-report h2 a {
+  font-size: 25px;
 }
 
 .main-content .valuation-details {
-  height: 100%;
+  height: auto;
   margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.905);
 }
@@ -160,6 +172,12 @@ body {
   border: 5px solid #C42020;
   color: #fff;
   border-radius: 8px;
+}
+.main-content .valuation-details #search:hover {
+  border: 5px solid #fff;
+}
+.main-content .valuation-details #search:focus {
+  border: 5px solid #fff;
 }
 
 .main-content .valuation-details #search::placeholder {
@@ -203,8 +221,124 @@ body {
 
 .main-content .valuation-details .sellers-table table tr .ellipsis {
   text-align: center;
+  font-size: 25px;
 }
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 16px;
+  top: 12px;
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab figure {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background: #C42020;
+  margin: 3px 0;
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .middle {
+  transition: all 0.25s cubic-bezier(0.72, 1.2, 0.71, 0.72);
+  transform: scale(1);
+  position: relative;
+  box-shadow: 0 0.1px 0.1px 0 rgb(196, 32, 32), 0 0.1px 0.3px 0 rgb(196, 32, 32);
+  -webkit-filter: blur(0.1px);
+  filter: blur(0.1px);
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .middle.active {
+  transform: scale(4.5);
+  transition: all 0.25s cubic-bezier(0.32, 2.04, 0.85, 0.54);
+  box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.16), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.12);
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  margin-top: -1px;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  transition: all 0.2s cubic-bezier(0.72, 1.2, 0.71, 0.72);
+  font-size: 22px;
+  user-select: none;
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .cross.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.15s cubic-bezier(0.32, 2.04, 0.85, 0.54);
+}
+
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown a, li {
+  text-decoration: none;
+}
+
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown a {
+  padding: 1em 18px;
+  font-size: 16px;
+}
+
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown {
+  position: absolute;
+  right: 0;
+  transition: all 0.25s ease-out;
+  transform: scale(0);
+  transform-origin: 100% 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown li {
+  display: block;
+  width: 100%;
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown li a {
+  font-size: 15px;
+  width: 200px;
+  padding: 1em 18px;
+  display: inline-block;
+  white-space: pre;
+  box-sizing: border-box;
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown li a:hover {
+  background: #141413;
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown:hover ul {
+  transform: scale(1);
+}
+.main-content .valuation-details .sellers-table table tr .ellipsis .kebab .dropdown.active {
+  text-align: left;
+  z-index: 1;
+  background-color: #fff;
+  transform: scale(1);
+  transition: all 0.25s cubic-bezier(0.5, 1.8, 0.9, 0.8);
+  padding-left: 0;
+  font-size: 20px;
+}
+
 
 .main-content .valuation-details .sellers-table table tr td .fa-eye{
   font-size: 30px;
+}
+
+.main-content .valuation-details .sellers-table table tr td .seller-address:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-content .valuation-details .sellers-table table tr td .seller-image{
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  float: left;
+  border-radius: 40px;
+}
+
+.main-content .valuation-details .sellers-table table tr td .seller-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.main-content .valuation-details .sellers-table .filters {
+  width: 100%;
+  height: 80px;
+  border-top: 3px solid #C42020;
 }

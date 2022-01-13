@@ -49,21 +49,44 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="filters">
+                        <div class="left-side">
+                            
+                        </div>
+                        <div class="right-side">
+
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
     <script type="script" src="/main.js"></script>
     <script>
+        $(document).ready(function() {
+            var kebab = document.querySelector(".kebab"),
+                middle = document.querySelector(".middle"),
+                cross = document.querySelector(".cross"),
+                dropdown = document.querySelector(".dropdown");
+
+                kebab.addEventListener("click", function () {
+                    middle.classList.toggle("active");
+                    cross.classList.toggle("active");
+                    dropdown.classList.toggle("active");
+                });
+        });
         var jsonData = $.getJSON("sellers.json", function() {
             var sellers = jsonData['responseJSON']['Seller'];
+            var reportTotal = sellers.length;
+            var total = $('<h2>' + reportTotal + '<a>Total valuations</a></h2>');
+            $(total).appendTo('.progress-report');
             for (var i = 0; i < sellers.length; i++) {
                 var sellerInfo = sellers[i];
-                console.log(sellerInfo);
-                var tableData = $('<tr><td>' + sellerInfo['Address'] + '<br/><a>' + sellerInfo['Updated'] + '</a></td> <td>' + sellerInfo['Name'] + '</td> <td>' + sellerInfo['Progress'] + '</td> <td>' + sellerInfo['Created'] + '</td> <td>' + sellerInfo['Completed'] + '</td> <td class="eyecon"><a class="fa fa-eye"></a></td> <td class="ellipsis"><a class="fa fa-ellipsis-v"></a></td> </tr>');
+                var tableData = $('<tr data-id=' + sellerInfo['Entry'] + '><td><div class="seller-image"><img src=' + sellerInfo['Link'] + ' alt="Italian Trulli"></div> <a class="seller-address">' + sellerInfo['Address'] + '</a><br/><a>' + sellerInfo['Updated'] + '</a></td> <td>' + sellerInfo['Name'] + '</td> <td>' + sellerInfo['Progress'] + '</td> <td>' + sellerInfo['Created'] + '</td> <td>' + sellerInfo['Completed'] + '</td> <td class="eyecon"><a class="fa fa-eye"></a></td> <td class="ellipsis"><div class="kebab"><figure></figure><figure class="middle"></figure><p class="cross">x</p><figure></figure><ul class="dropdown"><a>VALUATION</a><li><a><i class="fa fa-edit"></i> Edit</a></li><li><a><i class="fa fa-print"></i> Print</a></li><li><a><i class="fa fa-envelope"></i> Email</a></li><hr><a>PROPERTY REPORT</a><li><a><i class="fa fa-print"></i> Print</a></li><li><a><i class="fa fa-history"></i> Update sales</a></li><hr><li><a><i class="fa fa-trash"></i> Delete valuation</a></li></ul></div></td> </tr>');
                 $(tableData).appendTo('table');
             }
-        })
+        });
+        
     </script>
 </body>
 </html>
