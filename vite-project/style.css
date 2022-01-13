@@ -147,7 +147,64 @@ body {
 }
 
 .main-content .valuation-details {
-  height: 800px;
+  height: 100%;
   margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.905);
+}
+
+.main-content .valuation-details #search {
+  height: 50px;
+  width: 600px;
+  margin: 20px 0 20px 20px;
+  background-color: #141413;
+  border: 5px solid #C42020;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.main-content .valuation-details #search::placeholder {
+  color: #C42020;
+}
+
+.main-content .valuation-details #search:focus {
+  outline: none;
+}
+
+.main-content .valuation-details .sellers-table table {
+  margin: 0 auto;
+  width: 100%;
+  border-spacing: 1px;
+}
+
+.main-content .valuation-details .sellers-table table tr td {
+  text-align: left;
+  height: 80px;
+}
+
+.main-content .valuation-details .sellers-table table tr th {
+  text-align: left;
+  color: #141413;
+  padding-left: 15px;
+}
+
+.main-content .valuation-details .sellers-table table tr th:last-child {
+  width: 50px;
+}
+
+.main-content .valuation-details .sellers-table table tr:first-child {
+  font-size: 20px;
+  background-color: #C42020;
+  height: 60px;
+}
+
+.main-content .valuation-details .sellers-table table tr .eyecon {
+  text-align: center;
+}
+
+.main-content .valuation-details .sellers-table table tr .ellipsis {
+  text-align: center;
+}
+
+.main-content .valuation-details .sellers-table table tr td .fa-eye{
+  font-size: 30px;
 }
