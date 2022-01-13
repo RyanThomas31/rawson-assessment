@@ -50,12 +50,6 @@
                         </tbody>
                     </table>
                     <div class="filters">
-                        <div class="left-side">
-                            
-                        </div>
-                        <div class="right-side">
-
-                        </div>
                     </div>
                 </div>
             </section>
